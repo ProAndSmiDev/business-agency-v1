@@ -1,0 +1,13 @@
+mixin uiLogo(parent, isSVG, picAlt)
+  a.logo(href='/' class=`${(parent) ? `${parent}__logo` : ''}`)
+    if isSVG
+      svg.logo__icon.logo__icon--is-svg(title=picAlt)
+        use(href='/img/sprite.svg#logo')
+    else
+      picture.logo__icon.logo__icon--is-pic
+        source(srcset='/img/logo.webp' type='image/webp')
+        img(src='/img/logo.png' alt=picAlt)
+
+//- TODO: How to use mixin:
+      +uiLogo('header', false, logoAlt) --- for pic logo
+      +uiLogo('header', true, logoAlt) --- for svg icon

@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header-burger {
+  display: none;
+
+  @media(max-width: $tablet) {
+    display: inline-flex;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &__icon {
+      width: em(28, $fz);
+      height: em(28, $fz);
+      color: $secondary;
+    }
+  }
+}

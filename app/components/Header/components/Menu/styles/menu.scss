@@ -1,0 +1,64 @@
+.menu {
+  @media(max-width: $tablet) {
+    position: fixed;
+    z-index: 10000;
+    right: em(-180, $fz);
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: em(180, $fz);
+    background-color: $theme;
+    transition: right 0.6s ease-in-out;
+
+    &--is-active {
+      right: 0;
+    }
+  }
+}
+
+.menu-list {
+  @media(max-width: $tablet) {
+    flex-direction: column;
+  }
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: em(45, $fz);
+
+      @media(max-width: $tablet) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.menu-list-link {
+  &__text {
+    $fz: 18;
+    font-size: em($fz, $fz_base);
+    color: $secondary;
+  }
+}
+
+.menu-close {
+  display: none;
+
+  @media(max-width: $tablet) {
+    $self: &;
+    display: flex;
+    margin: em(5 5 5, $fz) auto;
+
+    &__icon {
+      width: em(20, $fz);
+      height: em(20, $fz);
+      color: $primary;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover {
+      #{$self}__icon {
+        opacity: 0.6;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &__icon {
+    &--is-svg {
+      $fz: 20;
+      font-size: em($fz, $fz_base);
+      color: $primary;
+    }
+
+    &--is-pic {
+      width: em(120, $fz);
+      height: 100%;
+    }
+  }
+}
