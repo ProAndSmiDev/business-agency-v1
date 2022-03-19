@@ -1,0 +1,21 @@
+include helpers/mixins
+doctype html
+html(lang=templateSettings.lang)
+  head
+    for type in templateSettings.meta
+      for val, name in type
+        +getMeta(type, name, val)
+    meta(name='viewport' content='width=device-width')
+    meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+    block metaSeo
+    base(href=templateSettings.base)
+    for val, type in templateSettings.link.rel
+      +getLink(type, val)
+  body
+    .page
+      block content
+
+    block modals
+
+  for link in templateSettings.scripts
+    +getScripts(link)

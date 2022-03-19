@@ -1,0 +1,23 @@
+mixin getMeta(type, name, content)
+  if type === 'http-equiv'
+    meta(http-equiv=name content=content)
+  else
+    if name === 'application-name'
+      for val, lang in content
+        meta(name=name, lang=lang content=val)
+    else if name === 'google'
+      meta(name=name value=content.value content=content.content)
+    else
+      meta(name=name content=content)
+
+mixin getLink(rel, content)
+  if rel === 'alternate'
+    for domain, lang in content.hreflang
+      link(rel=rel hreflang=lang href=domain)
+  else if rel === 'stylesheet'
+    link(rel=rel href=`/css/${content}`)
+  else
+    link(rel=rel href=content)
+
+mixin getScripts(fileName)
+  script(src=`/js/${fileName}`)

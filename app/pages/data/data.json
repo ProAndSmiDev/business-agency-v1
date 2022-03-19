@@ -1,0 +1,9 @@
+{
+  "home": {
+    "title": "Title for your project in the browser's tab - Home page",
+    "meta": {
+      "description": "This is description for robots by your page",
+      "keywords": "This, is, some, words, for, robots"
+    }
+  }
+}

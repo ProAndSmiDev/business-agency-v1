@@ -1,0 +1,10 @@
+mixin getMenu(parent)
+  nav.menu(class=`${(parent) ? `${parent}__menu` : ''}`)
+    button.menu-close.menu__close
+      svg.menu-close__icon
+        use(href='/img/sprite.svg#close')
+    ul.menu-list.menu__list
+      for item in menu
+        li.menu-list__item
+          a.menu-list-link.menu-list__link(href=item.link)
+            span.menu-list-link__text= item.title

@@ -1,0 +1,32 @@
+mixin uiStepsCard(stepTitle, stepPicName, stepInfo)
+  article.steps-card.steps-list__card
+    if stepTitle
+      h3.steps-card-title.steps-card__title
+        span.steps-card-title__text!= stepTitle
+
+    if stepPicName
+      picture.steps-card-promo.steps-card__promo
+        source(srcset=`/img/steps/${stepPicName}.webp` type='image/webp')
+        img.steps-card-promo__img(src=`/img/steps/${stepPicName}.jpg`)
+
+    if stepInfo
+      p.steps-card-info.steps-card__info
+        span.steps-card-info__text!= stepInfo
+
+mixin uiStepsList(steps, isRow)
+  ul.steps-list.steps__list(class=`${(isRow) ? '' : 'steps-list--is-column'}`)
+    for item in steps
+      li.steps-list__item
+        +uiStepsCard(item.title, item.picName, item.info)
+
+
+mixin uiSteps(parent, steps, isHorizontal)
+  section.steps(class=`${(parent) ? `${parent}__steps` : ''}`)
+    h2.steps-title.steps__title
+      span.steps-title__text!= steps.title
+
+    +uiStepsList(steps, isHorizontal)
+
+//- TODO: How to use mixin:
+      +uiSteps('main', steps, true) --- for horizontal cards
+      +uiSteps('main', steps, false) --- for vertical cards

@@ -1,0 +1,11 @@
+include ../../../uiKit/uiLogo/uiLogo
+include components/Menu/Menu
+
+mixin getHeader(parent)
+  header.header(class=`${(parent) ? parent + '__header' : ''}`)
+    .u-wrapper.u-wrapper--is-row
+      +uiLogo('header', false, logoAlt)
+      +getMenu('header')
+      button.header-burger.header__burger
+        svg.header-burger__icon
+          use(href='/img/sprite.svg#burger')

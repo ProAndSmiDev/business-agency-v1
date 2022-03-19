@@ -1,0 +1,21 @@
+extends ../layout/Template/Template
+
+include ../components/Header/Header
+include ../components/Main/Main
+include ../components/Footer/Footer
+
+block metaSeo
+  title= home.title
+  for content, name in home.meta
+    +getMeta('name', name, content)
+
+block content
+  +getHeader('page')
+  +getMain('page')
+  +getFooter('page')
+
+block modals
+  include ../components/Modal/ModalAuth/ModalAuth
+  +getModal
+  include ../components/Modal/ModalReg/ModalReg
+  +getModal
