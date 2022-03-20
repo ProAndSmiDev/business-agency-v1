@@ -1,2 +1,16 @@
+include components/AddMenu/AddMenu
+include components/Subscribe/Subscribe
+include components/Contacts/Contacts
+include components/Copyright/Copyright
+
 mixin getFooter(parent)
   footer.footer(class=`${(parent) ? parent + '__footer' : ''}`)
+    .footer__upper
+      .u-wrapper.u-wrapper--is-row.footer__wrapper.footer__wrapper--is-upper
+        +getAddMenu('footer')
+        +getSubscribe('footer')
+        +getContacts('footer')
+    .footer__lower
+      .u-wrapper.u-wrapper--is-row.footer__wrapper.footer__wrapper--is-lower
+        +getCopyright('footer')
+

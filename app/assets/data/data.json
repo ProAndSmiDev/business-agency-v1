@@ -1,9 +1,4 @@
 {
-	"logoAlt": "Логотип компании «SdelaiSam»",
-	"modal": {
-		"title": "Close modal",
-		"ariaLabel": "Close modal"
-	},
 	"templateSettings": {
 		"meta": {
 			"http-equiv": {
@@ -49,11 +44,70 @@
 			"app.min.js"
 		]
 	},
+	"logoAlt": "Логотип компании «SdelaiSam»",
+	"modal": {
+		"title": "Close modal",
+		"ariaLabel": "Close modal"
+	},
 	"home": {
 		"title": "Title for your project in the browser's tab - Home page",
 		"meta": {
 			"description": "This is description for robots by your page",
 			"keywords": "This, is, some, words, for, robots"
+		}
+	},
+	"addmenu": {
+		"title": "Site links",
+		"menu": [
+			{
+				"title": "Home",
+				"link": "#"
+			},
+			{
+				"title": "About us",
+				"link": "#about-us"
+			},
+			{
+				"title": "Team",
+				"link": "#team"
+			},
+			{
+				"title": "Projects",
+				"link": "#projects"
+			},
+			{
+				"title": "Contacts",
+				"link": "#contacts"
+			}
+		]
+	},
+	"contacts": {
+		"title": "Contact",
+		"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut abore et dolore magna aliqua",
+		"socials": [
+			{
+				"title": "Follow us to facebook",
+				"link": "https://fb.com",
+				"iconName": "fb"
+			},
+			{
+				"title": "Follow us to twitter",
+				"link": "https://twitter.com",
+				"iconName": "tw"
+			},
+			{
+				"title": "Follow us to instagram",
+				"link": "https://in.com",
+				"iconName": "in"
+			}
+		]
+	},
+	"copyright": "Your Company&copy;2022",
+	"subscribe": {
+		"title": "Subscribe",
+		"form": {
+			"mailPlaceholder": "E-mail",
+			"submitText": "Subscribe now"
 		}
 	},
 	"menu": [

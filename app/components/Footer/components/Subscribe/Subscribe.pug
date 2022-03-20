@@ -1,0 +1,8 @@
+mixin getSubscribe(parent)
+  .subscribe(class=`${(parent) ? `${parent}__subscribe` : ''}`)
+    h3.subscribe-title.subscribe__title
+      span.subscribe-title__text= subscribe.title
+    form.subscribe-form.subscribe__form
+      input.subscribe-form__area(type='text' placeholder=subscribe.form.mailPlaceholder)
+      button.subscribe-form-submit.subscribe-form__submit
+        span.subscribe-form-submit__text= subscribe.form.submitText

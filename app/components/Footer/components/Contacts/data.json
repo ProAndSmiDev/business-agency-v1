@@ -1,0 +1,23 @@
+{
+  "contacts": {
+    "title": "Contact",
+    "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut abore et dolore magna aliqua",
+    "socials": [
+      {
+        "title": "Follow us to facebook",
+        "link": "https://fb.com",
+        "iconName": "fb"
+      },
+      {
+        "title": "Follow us to twitter",
+        "link": "https://twitter.com",
+        "iconName": "tw"
+      },
+      {
+        "title": "Follow us to instagram",
+        "link": "https://in.com",
+        "iconName": "in"
+      }
+    ]
+  }
+}

@@ -46,7 +46,7 @@ const root = {
 };
 const assetsURI = `${root.dev}assets/`;
 const dev = {
-  fonts: `${assetsURI}fonts`,
+  fonts: `${assetsURI}fonts/**/*.ttf`,
   img: `${assetsURI}img/**/*.+(png|img)`,
   webp: `${assetsURI}webp/**/*.+(png|img)`,
   svg: `${assetsURI}svg/*.svg`,
@@ -251,7 +251,7 @@ const getAssets = series([
   parallel(getWoffFonts, getWoff2Fonts),
   parallel(getSVGSprite, getWEBPImages, getImages),
   parallel(getLibs, getJS, getStyles),
-  series(getHTML),
+  series(getData, getHTML),
 ]);
 /* работа с localhost */
 

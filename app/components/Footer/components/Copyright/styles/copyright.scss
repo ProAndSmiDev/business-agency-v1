@@ -1,0 +1,15 @@
+.copyright {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    $fz: 12;
+    text-transform: uppercase;
+    font-size: em($fz, $fz_base);
+    color: $primary;
+  }
+
+  @media(max-width: $pc) {
+    justify-content: center;
+  }
+}

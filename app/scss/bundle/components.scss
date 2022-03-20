@@ -1,4 +1,5 @@
 @import 'uiKit/uiLogo/styles/component';
+@import 'uiKit/uiSocials/styles/component';
 
 @import 'app/layout/Template/styles/component';
 
@@ -9,7 +10,10 @@
 @import 'app/components/Main/Banner/styles/component';
 
 @import 'app/components/Footer/styles/component';
-@import 'app/components/Footer/Socials/styles/component';
+@import 'app/components/Footer/components/AddMenu/styles/component';
+@import 'app/components/Footer/components/Subscribe/styles/component';
+@import 'app/components/Footer/components/Contacts/styles/component';
+@import 'app/components/Footer/components/Copyright/styles/component';
 
 @import 'app/components/Modal/styles/component';
 @import 'app/components/Modal/ModalAuth/styles/component';
