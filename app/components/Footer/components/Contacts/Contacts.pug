@@ -1,0 +1,9 @@
+include ../../../../../uiKit/uiSocials/uiSocials
+
+mixin getContacts(parent)
+  .contacts(class=`${(parent) ? `${parent}__contacts` : ''}`)
+    h3.contacts-title.contacts__title
+      span.contacts-title__text= contacts.title
+    p.contacts-info.contacts__info
+      span.contacts-info__text= contacts.info
+    +uiSocials('contacts', contacts.socials)

@@ -1,0 +1,7 @@
+mixin uiSocials(parent, content)
+  ul.socials(class=`${(parent) ? `${parent}__socials` : ''}`)
+    for item in content
+      li.socials__item
+        a.socials-link.socials__link(href=item.link title=item.title target='_blank')
+          svg.socials-link__icon(class=`socials-link__icon--is-${item.iconName}`)
+            use(href=`/img/sprite.svg#${item.iconName}`)

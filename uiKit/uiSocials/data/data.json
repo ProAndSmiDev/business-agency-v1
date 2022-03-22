@@ -1,0 +1,19 @@
+{
+  "socials": [
+    {
+      "title": "Follow us to facebook",
+      "link": "https://fb.com",
+      "iconName": "fb"
+    },
+    {
+      "title": "Follow us to twitter",
+      "link": "https://twitter.com",
+      "iconName": "tw"
+    },
+    {
+      "title": "Follow us to instagram",
+      "link": "https://in.com",
+      "iconName": "in"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+mixin getAddMenu(parent)
+  .addmenu(class=`${(parent) ? `${parent}__addmenu` : ''}`)
+    h3.addmenu-title.addmenu__title
+      span.addmenu-title__text= addmenu.title
+    ul.addmenu-list.addmenu__list
+      for item in addmenu.menu
+        li.addmenu-list__item
+          a.addmenu-link.addmenu-list__link(href=item.link)
+            span.addmenu-link__text= item.title

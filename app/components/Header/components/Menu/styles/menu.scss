@@ -1,5 +1,5 @@
 .menu {
-  @media(max-width: $tablet) {
+  @media(max-width: $pc) {
     position: fixed;
     z-index: 10000;
     right: em(-180, $fz);
@@ -17,7 +17,7 @@
 }
 
 .menu-list {
-  @media(max-width: $tablet) {
+  @media(max-width: $pc) {
     flex-direction: column;
   }
 
@@ -25,7 +25,7 @@
     &:not(:first-child) {
       margin-left: em(45, $fz);
 
-      @media(max-width: $tablet) {
+      @media(max-width: $pc) {
         margin-left: 0;
       }
     }
@@ -43,7 +43,7 @@
 .menu-close {
   display: none;
 
-  @media(max-width: $tablet) {
+  @media(max-width: $pc) {
     $self: &;
     display: flex;
     margin: em(5 5 5, $fz) auto;

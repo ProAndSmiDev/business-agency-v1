@@ -1,0 +1,9 @@
+{
+  "subscribe": {
+    "title": "Subscribe",
+    "form": {
+      "mailPlaceholder": "E-mail",
+      "submitText": "Subscribe now"
+    }
+  }
+}

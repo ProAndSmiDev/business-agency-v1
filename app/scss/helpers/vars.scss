@@ -4,6 +4,15 @@ $theme: hsl(39, 100%, 72%) !default;
 $primary: hsl(0, 0%, 100%);
 $secondary: hsl(0, 0%, 27%);
 
-$phone: 575px;
-$smartphone: 767px;
-$tablet: 1023px;
+$smartphone: 575px;
+$tablet: 767px;
+$pc: 1023px;
+
+$social_color: $primary;
+
+$fb_width: em(13, $fz);
+$fb_height: em(23, $fz);
+$tw_width: em(29, $fz);
+$tw_height: em(23, $fz);
+$in_width: em(23, $fz);
+$in_height: em(23, $fz);

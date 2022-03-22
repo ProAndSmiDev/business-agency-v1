@@ -1,0 +1,33 @@
+.socials {
+  display: flex;
+  align-items: baseline;
+
+  &__item {
+    &:not(:first-child) {
+      margin-left: em(15, $fz);
+    }
+  }
+}
+
+.socials-link {
+  display: inline-flex;
+
+  &__icon {
+    color: $social_color;
+
+    &--is-fb {
+      width: $fb_width;
+      height: $fb_height;
+    }
+
+    &--is-tw {
+      width: $tw_width;
+      height: $tw_height;
+    }
+
+    &--is-in {
+      width: $in_width;
+      height: $in_height;
+    }
+  }
+}

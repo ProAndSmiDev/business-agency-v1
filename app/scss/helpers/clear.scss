@@ -2,11 +2,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font: inherit;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font: inherit;
 }
 
 main {
@@ -44,6 +47,7 @@ button {
   outline: none;
   border: none;
   background-color: transparent;
+  font: inherit;
 
   &:focus {
     outline: none;
@@ -59,6 +63,7 @@ ul {
 input {
   outline: unset;
   border: unset;
+  font: inherit;
 
   &::placeholder {
     opacity: 0.6;

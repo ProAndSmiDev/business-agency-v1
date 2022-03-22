@@ -1,0 +1,3 @@
+mixin getCopyright(parent)
+  p.copyright(class=`${(parent) ? `${parent}__copyright` : ''}`)
+    span.copyright__text!= copyright
