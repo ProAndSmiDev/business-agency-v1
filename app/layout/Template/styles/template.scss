@@ -1,6 +1,10 @@
 .page {
   &__header {
     min-height: em(90, $fz);
+
+    @media(max-width: $phone) {
+      min-height: em(60, $fz);
+    }
   }
   &__main {}
   &__footer {}
