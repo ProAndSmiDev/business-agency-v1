@@ -1,4 +1,4 @@
-mixin getMenu(parent)
+mixin getMenu(parent='header')
   nav.menu(class=`${(parent) ? `${parent}__menu` : ''}`)
     button.menu-close.menu__close
       svg.menu-close__icon

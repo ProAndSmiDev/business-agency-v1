@@ -6,7 +6,7 @@
 .header-burger {
   display: none;
 
-  @media(max-width: $pc) {
+  @media (max-width: $pc) {
     display: inline-flex;
     transition: opacity 0.3s ease-in-out;
 

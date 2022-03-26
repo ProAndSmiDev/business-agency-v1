@@ -1,4 +1,4 @@
-mixin getAddMenu(parent)
+mixin getAddMenu(parent='footer')
   .addmenu(class=`${(parent) ? `${parent}__addmenu` : ''}`)
     h3.addmenu-title.addmenu__title
       span.addmenu-title__text= addmenu.title

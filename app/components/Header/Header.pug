@@ -5,7 +5,7 @@ mixin getHeader(parent)
   header.header(class=`${(parent) ? parent + '__header' : ''}`)
     .u-wrapper.u-wrapper--is-row
       +uiLogo('header', false, logoAlt)
-      +getMenu('header')
+      +getMenu
       button.header-burger.header__burger
         svg.header-burger__icon
           use(href='/img/sprite.svg#burger')

@@ -304,6 +304,7 @@ module.exports = {
         'stylelint-scss',
         'stylelint-selector-bem-pattern',
     ],
+    extends: 'stylelint-config-standard-scss',
     rules: {
         'at-rule-blacklist': ['debug',
             {

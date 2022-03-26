@@ -1,0 +1,12 @@
+mixin getAbout(parent='main')
+  section.about#about-us(class=`${(parent) ? `${parent}__about` : ''}`)
+    .u-wrapper.u-wrapper--is-row.about__wrapper
+      .about-info.about__info
+        h2.about-info-title.about-info__title
+          span.about-info-title__text= about.title
+        for paragraph in about.text
+          p.about-info-par.about-info__par
+            span.about-info-par__text= paragraph
+      picture.about-photo.about__photo
+        source(srcset=`/img/about/${about.photo.name}.webp` type='image/webp')
+        img.about-photo__img(src=`/img/about/${about.photo.name}.jpg` alt=about.photo.alt)
