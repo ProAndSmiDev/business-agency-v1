@@ -1,4 +1,5 @@
 {
+	"logoAlt": "Логотип компании «SdelaiSam»",
 	"templateSettings": {
 		"meta": {
 			"http-equiv": {
@@ -43,11 +44,6 @@
 			"libs.min.js",
 			"app.min.js"
 		]
-	},
-	"logoAlt": "Логотип компании «SdelaiSam»",
-	"modal": {
-		"title": "Close modal",
-		"ariaLabel": "Close modal"
 	},
 	"home": {
 		"title": "Title for your project in the browser's tab - Home page",
