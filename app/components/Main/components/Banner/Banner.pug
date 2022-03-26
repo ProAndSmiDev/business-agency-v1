@@ -7,3 +7,6 @@ mixin getBanner(parent)
         span.banner-info__text= banner.info
       a.banner-btn.banner__btn(href=banner.btn.link title=banner.btn.text)
         span.banner-btn__text= banner.btn.text
+    a.banner-down.banner__down.pulse-opacity(href=banner.btn.arrowLink aria-label=banner.btn.arrowTitle title=banner.btn.arrowTitle)
+      svg.banner-down__icon
+        use(href='/img/sprite.svg#arrow-down')
