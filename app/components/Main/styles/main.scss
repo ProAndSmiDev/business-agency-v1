@@ -1,0 +1,14 @@
+.main {
+  &__banner {
+    position: relative;
+    min-height: em(680, $fz);
+
+    @media(max-width: $pc) {
+      min-height: em(480, $fz);
+    }
+
+    @media(max-width: $phone) {
+      min-height: em(360, $fz);
+    }
+  }
+}

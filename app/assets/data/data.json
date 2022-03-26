@@ -1,5 +1,4 @@
 {
-	"logoAlt": "Логотип компании «SdelaiSam»",
 	"templateSettings": {
 		"meta": {
 			"http-equiv": {
@@ -45,6 +44,7 @@
 			"app.min.js"
 		]
 	},
+	"logoAlt": "Логотип компании «SdelaiSam»",
 	"home": {
 		"title": "Title for your project in the browser's tab - Home page",
 		"meta": {
@@ -98,7 +98,6 @@
 			}
 		]
 	},
-	"copyright": "Your Company&copy;2022",
 	"subscribe": {
 		"title": "Subscribe",
 		"form": {
@@ -106,6 +105,7 @@
 			"submitText": "Subscribe now"
 		}
 	},
+	"copyright": "Your Company&copy;2022",
 	"menu": [
 		{
 			"title": "Home",
@@ -127,5 +127,13 @@
 			"title": "Contacts",
 			"link": "#contacts"
 		}
-	]
+	],
+	"banner": {
+		"title": "One page",
+		"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerciation ulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure",
+		"btn": {
+			"text": "Start now",
+			"link": "#"
+		}
+	}
 }
