@@ -4,7 +4,7 @@
   &__info {
     margin-top: em(15, $fz);
 
-    @media(max-width: $pc) {
+    @media (max-width: $pc) {
       margin-top: 0;
     }
   }
@@ -12,44 +12,47 @@
   &__socials {
     margin-top: em(15, $fz);
 
-    @media(max-width: $pc) {
+    @media (max-width: $pc) {
       justify-content: center;
     }
   }
 }
 
 .contacts-title {
-  color: $primary;
   text-transform: uppercase;
-
-  @media(max-width: $pc) {
-    text-align: center;
-  }
+  color: $primary;
 
   &__text {
     font-weight: 600;
 
-    @media(max-width: $pc) {
+    @media (max-width: $pc) {
       $fz: 14;
+
       font-size: em($fz, $fz_base);
     }
+  }
+
+  @media (max-width: $pc) {
+    text-align: center;
   }
 }
 
 .contacts-info {
   color: $primary;
 
-  @media(max-width: $pc) {
-    text-align: center;
-  }
-
   &__text {
     $fz: 14;
+
     font-size: em($fz, $fz_base);
 
-    @media(max-width: $pc) {
+    @media (max-width: $pc) {
       $fz: 12;
+
       font-size: em($fz, $fz_base);
     }
+  }
+
+  @media (max-width: $pc) {
+    text-align: center;
   }
 }
