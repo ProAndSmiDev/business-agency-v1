@@ -12,8 +12,28 @@
   }
 }
 
+@keyframes pulsedOpacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .pulse {
   animation: pulse 1.5s ease-in-out infinite;
+
+  &:hover {
+    animation-duration: 1s;
+  }
+}
+
+.pulse-opacity {
+  animation: pulsedOpacity 1.5s ease-in-out infinite;
 
   &:hover {
     animation-duration: 1s;

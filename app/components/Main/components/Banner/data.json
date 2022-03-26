@@ -4,7 +4,9 @@
     "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerciation ulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure",
     "btn": {
       "text": "Start now",
-      "link": "#"
+      "link": "#",
+      "arrowTitle": "Scroll down",
+      "arrowLink": "#about-us"
     }
   }
 }
