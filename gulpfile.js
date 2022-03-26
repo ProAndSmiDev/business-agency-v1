@@ -47,8 +47,8 @@ const root = {
 const assetsURI = `${root.dev}assets/`;
 const dev = {
   fonts: `${assetsURI}fonts/**/*.ttf`,
-  img: `${assetsURI}img/**/*.+(png|img)`,
-  webp: `${assetsURI}webp/**/*.+(png|img)`,
+  img: `${assetsURI}img/**/*.+(png|jpg|jpeg)`,
+  webp: `${assetsURI}webp/**/*.+(png|jpg|jpeg)`,
   svg: `${assetsURI}svg/*.svg`,
   scripts: `${assetsURI}ts/*.ts`,
   merged_data: `${assetsURI}data/data.json`,

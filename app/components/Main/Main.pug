@@ -1,2 +1,5 @@
+include components/Banner/Banner
+
 mixin getMain(parent)
   main.main(class=`${(parent) ? parent + '__main' : ''}`)
+    +getBanner('main')

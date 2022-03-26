@@ -1,0 +1,139 @@
+.banner {
+  background-image: url('/img/banner_bg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+
+  @media(max-width: $phone) {
+    background-attachment: scroll;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 0%, 22%);
+    opacity: 0.9;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: em(791, $fz);
+    margin: auto;
+
+    @media(max-width: $pc) {
+      max-width: em(720, $fz);
+    }
+  }
+
+  &__info {
+    margin-top: em(25, $fz);
+
+    @media(max-width: $phone) {
+      margin-top: em(10, $fz);
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    max-width: em(309, $fz);
+    margin-top: em(40, $fz);
+
+    @media(max-width: $pc) {
+      max-width: em(240, $fz);
+    }
+
+    @media(max-width: $phone) {
+      max-width: em(150, $fz);
+      margin-top: em(20, $fz);
+    }
+  }
+}
+
+.banner-title {
+  padding-left: em(15, $fz);
+  padding-right: em(15, $fz);
+  text-transform: uppercase;
+
+  &__text {
+    $fz: 72;
+    font-size: em($fz, $fz_base);
+    color: $primary;
+    font-weight: 700;
+
+    @media(max-width: $pc) {
+      $fz: 54;
+      font-size: em($fz, $fz_base);
+    }
+
+    @media(max-width: $phone) {
+      $fz: 28;
+      font-size: em($fz, $fz_base);
+    }
+  }
+}
+
+.banner-info {
+  padding-left: em(15, $fz);
+  padding-right: em(15, $fz);
+  text-align: center;
+
+  &__text {
+    $fz: 18;
+    font-size: em($fz, $fz_base);
+    color: $primary;
+    line-height: 2;
+
+    @media(max-width: $pc) {
+      $fz: 14;
+      font-size: em($fz, $fz_base);
+    }
+
+    @media(max-width: $phone) {
+      $fz: 10;
+      font-size: em($fz, $fz_base);
+    }
+  }
+}
+
+.banner-btn {
+  text-align: center;
+  padding: em(10.5 15, $fz);
+  background-color: $theme;
+  border-radius: em(4, $fz);
+
+  @media(max-width: $pc) {
+    padding: em(5 10, $fz);
+  }
+
+  @media(max-width: $phone) {
+    padding: em(3 8, $fz);
+  }
+
+  &__text {
+    $fz: 22;
+    font-size: em($fz, $fz_base);
+    color: $secondary;
+    font-weight: 700;
+    line-height: 2;
+
+    @media(max-width: $pc) {
+      $fz: 18;
+      font-size: em($fz, $fz_base);
+    }
+
+    @media(max-width: $phone) {
+      $fz: 14;
+      font-size: em($fz, $fz_base);
+    }
+  }
+}
