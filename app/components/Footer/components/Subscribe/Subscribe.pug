@@ -1,4 +1,4 @@
-mixin getSubscribe(parent)
+mixin getSubscribe(parent='footer')
   .subscribe(class=`${(parent) ? `${parent}__subscribe` : ''}`)
     h3.subscribe-title.subscribe__title
       span.subscribe-title__text= subscribe.title

@@ -1,10 +1,10 @@
 .menu {
-  @media(max-width: $pc) {
+  @media (max-width: $pc) {
     position: fixed;
-    z-index: 10000;
-    right: em(-180, $fz);
     top: 0;
+    right: em(-180, $fz);
     bottom: 0;
+    z-index: 10000;
     width: 100%;
     max-width: em(180, $fz);
     background-color: $theme;
@@ -17,24 +17,25 @@
 }
 
 .menu-list {
-  @media(max-width: $pc) {
-    flex-direction: column;
-  }
-
   &__item {
     &:not(:first-child) {
       margin-left: em(45, $fz);
 
-      @media(max-width: $pc) {
+      @media (max-width: $pc) {
         margin-left: 0;
       }
     }
+  }
+
+  @media (max-width: $pc) {
+    flex-direction: column;
   }
 }
 
 .menu-list-link {
   &__text {
     $fz: 18;
+
     font-size: em($fz, $fz_base);
     color: $secondary;
   }
@@ -43,8 +44,9 @@
 .menu-close {
   display: none;
 
-  @media(max-width: $pc) {
+  @media (max-width: $pc) {
     $self: &;
+
     display: flex;
     margin: em(5 5 5, $fz) auto;
 

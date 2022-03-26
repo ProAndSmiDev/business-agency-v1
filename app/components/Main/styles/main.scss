@@ -3,12 +3,20 @@
     position: relative;
     min-height: em(680, $fz);
 
-    @media(max-width: $pc) {
+    @media (max-width: $pc) {
       min-height: em(480, $fz);
     }
 
-    @media(max-width: $phone) {
+    @media (max-width: $phone) {
       min-height: em(360, $fz);
+    }
+  }
+
+  &__about {
+    min-height: em(768, $fz);
+
+    @media (max-width: $phone) {
+      min-height: em(625, $fz);
     }
   }
 }

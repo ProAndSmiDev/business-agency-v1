@@ -4,7 +4,7 @@
   &__form {
     margin-top: em(20, $fz);
 
-    @media(max-width: $pc) {
+    @media (max-width: $pc) {
       margin-top: em(10, $fz);
     }
   }
@@ -14,17 +14,18 @@
   text-transform: uppercase;
   color: $primary;
 
-  @media(max-width: $pc) {
-    text-align: center;
-  }
-
   &__text {
     font-weight: 600;
 
-    @media(max-width: $pc) {
+    @media (max-width: $pc) {
       $fz: 14;
+
       font-size: em($fz, $fz_base);
     }
+  }
+
+  @media (max-width: $pc) {
+    text-align: center;
   }
 }
 
@@ -37,15 +38,16 @@
     width: 100%;
     border-radius: em(3, $fz);
 
-    @media(max-width: $pc) {
-      padding: em(5, $fz);
-    }
-
     &::placeholder {
       $fz: 14;
+
       font-family: 'Montserrat', 'Arial', sans-serif;
       font-size: em($fz, $fz_base);
       color: $secondary;
+    }
+
+    @media (max-width: $pc) {
+      padding: em(5, $fz);
     }
   }
 
@@ -61,23 +63,25 @@
   background-color: $theme;
   transition: opacity 0.3s ease-in-out;
 
-  @media(max-width: $pc) {
-    padding: em(5, $fz);
-  }
-
   &:hover {
     opacity: 0.8;
   }
 
   &__text {
     $fz: 18;
+
     font-size: em($fz, $fz_base);
     font-weight: 700;
     color: $secondary;
 
-    @media(max-width: $pc) {
+    @media (max-width: $pc) {
       $fz: 14;
+
       font-size: em($fz, $fz_base);
     }
+  }
+
+  @media (max-width: $pc) {
+    padding: em(5, $fz);
   }
 }

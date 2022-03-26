@@ -1,6 +1,6 @@
 include ../../../../../uiKit/uiSocials/uiSocials
 
-mixin getContacts(parent)
+mixin getContacts(parent='footer')
   .contacts(class=`${(parent) ? `${parent}__contacts` : ''}`)
     h3.contacts-title.contacts__title
       span.contacts-title__text= contacts.title
