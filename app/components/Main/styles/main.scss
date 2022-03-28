@@ -6,7 +6,6 @@
     @media (max-width: $pc) {
       min-height: em(480, $fz);
     }
-
     @media (max-width: $phone) {
       min-height: em(360, $fz);
     }
@@ -17,6 +16,16 @@
 
     @media (max-width: $phone) {
       min-height: em(625, $fz);
+    }
+  }
+
+  &__team {
+    min-height: em(768, $fz);
+
+    @media(max-width: $ws) {
+      max-width: em(998, $fz);
+      margin-right: auto;
+      margin-left: auto;
     }
   }
 }

@@ -1,14 +1,20 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font: inherit;
 }
 
@@ -22,8 +28,9 @@ section {
 }
 
 picture {
-  display: inline-block;
   width: 100%;
+
+  display: inline-block;
   line-height: 0;
 }
 
@@ -31,6 +38,13 @@ img {
   width: 100%;
   height: auto;
   object-fit: cover;
+
+  &[class *= "error-img"] {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    line-height: 1.3;
+  }
 }
 
 a {
@@ -44,6 +58,7 @@ a {
 
 button {
   cursor: pointer;
+
   outline: none;
   border: none;
   background-color: transparent;
@@ -91,27 +106,78 @@ body {
 }
 
 .page {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh;
   margin-right: auto;
   margin-left: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .u-wrapper {
+  width: 100%;
+  max-width: em(1170, $fz);
+  margin-right: auto;
+  margin-left: auto;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding-right: em(15, $fz);
   padding-left: em(15, $fz);
-  width: 100%;
-  max-width: em(1170, $fz);
-  margin-right: auto;
-  margin-left: auto;
 
   &--is-row {
     flex-direction: row;
+  }
+}
+
+%main__title {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: em(-20, $fz);
+    left: 0;
+    width: 100%;
+    height: em(10, $fz);
+
+    content: "";
+
+    display: block;
+    background-color: $theme;
+
+    @media (max-width: $pc) {
+      bottom: em(-10, $fz);
+      height: em(6, $fz);
+    }
+    @media (max-width: $phone) {
+      bottom: em(-5, $fz);
+      height: em(4, $fz);
+    }
+  }
+}
+
+%main-title {
+  display: inline-flex;
+
+  &__text {
+    $fz: 60;
+    color: $secondary;
+
+    font-size: em($fz, $fz_base);
+    font-weight: 700;
+
+    @media (max-width: $pc) {
+      $fz: 48;
+
+      font-size: em($fz, $fz_base);
+    }
+    @media (max-width: $phone) {
+      $fz: 36;
+
+      font-size: em($fz, $fz_base);
+    }
   }
 }

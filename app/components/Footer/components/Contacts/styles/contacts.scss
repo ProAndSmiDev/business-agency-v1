@@ -19,8 +19,12 @@
 }
 
 .contacts-title {
-  text-transform: uppercase;
   color: $primary;
+  text-transform: uppercase;
+
+  @media (max-width: $pc) {
+    text-align: center;
+  }
 
   &__text {
     font-weight: 600;
@@ -31,14 +35,14 @@
       font-size: em($fz, $fz_base);
     }
   }
-
-  @media (max-width: $pc) {
-    text-align: center;
-  }
 }
 
 .contacts-info {
   color: $primary;
+
+  @media (max-width: $pc) {
+    text-align: center;
+  }
 
   &__text {
     $fz: 14;
@@ -50,9 +54,5 @@
 
       font-size: em($fz, $fz_base);
     }
-  }
-
-  @media (max-width: $pc) {
-    text-align: center;
   }
 }
