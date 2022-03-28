@@ -2,15 +2,15 @@
   display: flex;
   align-items: center;
 
+  @media (max-width: $pc) {
+    justify-content: center;
+  }
+
   &__text {
     $fz: 12;
+    color: $primary;
 
     text-transform: uppercase;
     font-size: em($fz, $fz_base);
-    color: $primary;
-  }
-
-  @media (max-width: $pc) {
-    justify-content: center;
   }
 }

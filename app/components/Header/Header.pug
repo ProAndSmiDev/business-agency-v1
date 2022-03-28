@@ -1,7 +1,7 @@
 include ../../../uiKit/uiLogo/uiLogo
 include components/Menu/Menu
 
-mixin getHeader(parent)
+mixin getHeader(parent='page')
   header.header(class=`${(parent) ? parent + '__header' : ''}`)
     .u-wrapper.u-wrapper--is-row
       +uiLogo('header', false, logoAlt)

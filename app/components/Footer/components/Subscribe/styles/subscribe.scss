@@ -11,8 +11,12 @@
 }
 
 .subscribe-title {
-  text-transform: uppercase;
   color: $primary;
+  text-transform: uppercase;
+
+  @media (max-width: $pc) {
+    text-align: center;
+  }
 
   &__text {
     font-weight: 600;
@@ -23,10 +27,6 @@
       font-size: em($fz, $fz_base);
     }
   }
-
-  @media (max-width: $pc) {
-    text-align: center;
-  }
 }
 
 .subscribe-form {
@@ -34,20 +34,21 @@
   flex-direction: column;
 
   &__area {
-    padding: em(11.5 15, $fz);
     width: 100%;
+
+    padding: em(11.5 15, $fz);
     border-radius: em(3, $fz);
-
-    &::placeholder {
-      $fz: 14;
-
-      font-family: 'Montserrat', 'Arial', sans-serif;
-      font-size: em($fz, $fz_base);
-      color: $secondary;
-    }
 
     @media (max-width: $pc) {
       padding: em(5, $fz);
+    }
+
+    &::placeholder {
+      $fz: 14;
+      color: $secondary;
+
+      font-family: "Montserrat", "Arial", sans-serif;
+      font-size: em($fz, $fz_base);
     }
   }
 
@@ -63,25 +64,25 @@
   background-color: $theme;
   transition: opacity 0.3s ease-in-out;
 
+  @media (max-width: $pc) {
+    padding: em(5, $fz);
+  }
+
   &:hover {
     opacity: 0.8;
   }
 
   &__text {
     $fz: 18;
+    color: $secondary;
 
     font-size: em($fz, $fz_base);
     font-weight: 700;
-    color: $secondary;
 
     @media (max-width: $pc) {
       $fz: 14;
 
       font-size: em($fz, $fz_base);
     }
-  }
-
-  @media (max-width: $pc) {
-    padding: em(5, $fz);
   }
 }

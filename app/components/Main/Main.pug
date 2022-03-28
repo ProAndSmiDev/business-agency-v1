@@ -1,7 +1,9 @@
 include components/Banner/Banner
 include components/About/About
+include components/Team/Team
 
-mixin getMain(parent)
+mixin getMain(parent='page')
   main.main(class=`${(parent) ? parent + '__main' : ''}`)
     +getBanner
     +getAbout
+    +getTeam

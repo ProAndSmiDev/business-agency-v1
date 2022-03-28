@@ -1,5 +1,9 @@
 {
   "banner": {
+    "bg": {
+      "name": "banner-bg",
+      "alt": "Banner's bg photo"
+    },
     "title": "One page",
     "info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inciidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerciation ulamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure",
     "btn": {

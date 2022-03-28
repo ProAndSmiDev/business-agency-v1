@@ -1,30 +1,43 @@
 .banner {
   display: flex;
   align-items: center;
-  background-attachment: fixed;
-  background-image: url('/img/banner/bg.jpg');
-  background-position: bottom;
-  background-size: cover;
 
-  &::before {
-    content: '';
-    opacity: 0.9;
+  @media (max-width: $phone) {
+    background-attachment: scroll;
+  }
+
+  &__bg {
     position: absolute;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: lighten($secondary, 5%);
+
+    display: flex;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      opacity: 0.9;
+
+      content: "";
+      background-color: lighten($secondary, 5%);
+    }
   }
 
   &__wrapper {
-    display: flex;
     position: relative;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
     max-width: em(791, $fz);
     margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media (max-width: $pc) {
       max-width: em(720, $fz);
@@ -47,7 +60,6 @@
     @media (max-width: $pc) {
       max-width: em(240, $fz);
     }
-
     @media (max-width: $phone) {
       max-width: em(150, $fz);
       margin-top: em(20, $fz);
@@ -68,15 +80,16 @@
       max-width: em(48, $fz);
       max-height: em(26, $fz);
     }
-
     @media (max-width: $phone) {
       max-width: em(40, $fz);
       max-height: em(24, $fz);
     }
   }
+}
 
-  @media (max-width: $phone) {
-    background-attachment: scroll;
+.banner-bg {
+  &__img {
+    object-position: bottom;
   }
 }
 
@@ -87,17 +100,16 @@
 
   &__text {
     $fz: 72;
+    color: $primary;
 
     font-size: em($fz, $fz_base);
     font-weight: 700;
-    color: $primary;
 
     @media (max-width: $pc) {
       $fz: 54;
 
       font-size: em($fz, $fz_base);
     }
-
     @media (max-width: $phone) {
       $fz: 28;
 
@@ -113,17 +125,16 @@
 
   &__text {
     $fz: 18;
+    color: $primary;
 
     font-size: em($fz, $fz_base);
     line-height: 2;
-    color: $primary;
 
     @media (max-width: $pc) {
       $fz: 14;
 
       font-size: em($fz, $fz_base);
     }
-
     @media (max-width: $phone) {
       $fz: 10;
 
@@ -138,40 +149,38 @@
   background-color: $theme;
   text-align: center;
 
+  @media (max-width: $pc) {
+    padding: em(5 10, $fz);
+  }
+  @media (max-width: $phone) {
+    padding: em(3 8, $fz);
+  }
+
   &__text {
     $fz: 22;
+    color: $secondary;
 
     font-size: em($fz, $fz_base);
     font-weight: 700;
     line-height: 2;
-    color: $secondary;
 
     @media (max-width: $pc) {
       $fz: 18;
 
       font-size: em($fz, $fz_base);
     }
-
     @media (max-width: $phone) {
       $fz: 14;
 
       font-size: em($fz, $fz_base);
     }
   }
-
-  @media (max-width: $pc) {
-    padding: em(5 10, $fz);
-  }
-
-  @media (max-width: $phone) {
-    padding: em(3 8, $fz);
-  }
 }
 
 .banner-down {
   display: flex;
   align-items: flex-end;
-  background-image: url('/img/banner/bg-arrow.png');
+  background-image: url("/img/banner/bg-arrow.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -185,7 +194,6 @@
     @media (max-width: $pc) {
       height: em(18, $fz);
     }
-
     @media (max-width: $phone) {
       height: em(16, $fz);
     }
