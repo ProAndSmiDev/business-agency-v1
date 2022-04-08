@@ -3,7 +3,7 @@ include components/Subscribe/Subscribe
 include components/Contacts/Contacts
 include components/Copyright/Copyright
 
-mixin getFooter(parent)
+mixin getFooter(parent='page')
   footer.footer(class=`${(parent) ? parent + '__footer' : ''}`)
     .footer__upper
       .u-wrapper.u-wrapper--is-row.footer__wrapper.footer__wrapper--is-upper

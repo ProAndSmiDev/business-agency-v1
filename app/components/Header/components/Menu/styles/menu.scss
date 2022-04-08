@@ -17,6 +17,10 @@
 }
 
 .menu-list {
+  @media (max-width: $pc) {
+    flex-direction: column;
+  }
+
   &__item {
     &:not(:first-child) {
       margin-left: em(45, $fz);
@@ -26,18 +30,14 @@
       }
     }
   }
-
-  @media (max-width: $pc) {
-    flex-direction: column;
-  }
 }
 
 .menu-list-link {
   &__text {
     $fz: 18;
+    color: $secondary;
 
     font-size: em($fz, $fz_base);
-    color: $secondary;
   }
 }
 
@@ -46,9 +46,9 @@
 
   @media (max-width: $pc) {
     $self: &;
+    margin: em(5 5 5, $fz) auto;
 
     display: flex;
-    margin: em(5 5 5, $fz) auto;
 
     &__icon {
       width: em(20, $fz);

@@ -1,0 +1,115 @@
+{
+  "team": {
+    "title": "Our team",
+    "teammates": [
+      {
+        "name": "Daniel Walson",
+        "position": "Developer",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+        "photo": {
+          "name": "daniel-walson",
+          "desc": "Photo by Daniel Walson"
+        },
+        "socials": [
+          {
+            "title": "Daniel Walson in Facebook",
+            "iconName": "fb",
+            "link": "#"
+          },
+          {
+            "title": "Daniel Walson in Twitter",
+            "iconName": "tw",
+            "link": "#"
+          },
+          {
+            "title": "Daniel Walson in Instagram",
+            "iconName": "in",
+            "link": "#"
+          }
+        ],
+        "isInverted": false
+      },
+      {
+        "name": "Christopher Robinson",
+        "position": "Team Lead",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+        "photo": {
+          "name": "christopher-robinson",
+          "desc": "Photo by Christopher Robinson"
+        },
+        "socials": [
+          {
+            "title": "Christopher Robinson in Facebook",
+            "iconName": "fb",
+            "link": "#"
+          },
+          {
+            "title": "Christopher Robinson in Twitter",
+            "iconName": "tw",
+            "link": "#"
+          },
+          {
+            "title": "Christopher Robinson in Instagram",
+            "iconName": "in",
+            "link": "#"
+          }
+        ],
+        "isInverted": false
+      },
+      {
+        "name": "Paul Shneider",
+        "position": "Director",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+        "photo": {
+          "name": "paul-shneider",
+          "desc": "Photo by Paul Shneider"
+        },
+        "socials": [
+          {
+            "title": "Paul Shneider in Facebook",
+            "iconName": "fb",
+            "link": "#"
+          },
+          {
+            "title": "Paul Shneider in Twitter",
+            "iconName": "tw",
+            "link": "#"
+          },
+          {
+            "title": "Paul Shneider in Instagram",
+            "iconName": "in",
+            "link": "#"
+          }
+        ],
+        "isInverted": true
+      },
+      {
+        "name": "Alex Smith",
+        "position": "SEO-specialist",
+        "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis",
+        "photo": {
+          "name": "alex-smith",
+          "desc": "Photo by Alex Smith"
+        },
+        "socials": [
+          {
+            "title": "Alex Smith in Facebook",
+            "iconName": "fb",
+            "link": "#"
+          },
+          {
+            "title": "Alex Smith in Twitter",
+            "iconName": "tw",
+            "link": "#"
+          },
+          {
+            "title": "Alex Smith in Instagram",
+            "iconName": "in",
+            "link": "#"
+          }
+        ],
+        "isInverted": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+include ../../../../../../../uiKit/uiSocials/uiSocials
+
+mixin getTeammate(parent='team-list', content)
+  article.teammate(class=`${(parent) ? `${parent}__teammate` : ''}`)
+    .teammate__wrapper(class=`${(content.isInverted) ? 'teammate__wrapper--is-inverted' : ''}`)
+      picture.teammate-photo.teammate__photo(class=`${(content.isInverted) ? 'teammate__photo--is-inverted' : ''}`)
+        source(srcset=`/img/team/teammates/${content.photo.name}.webp` type='image/webp')
+
+        img.teammate-photo__img(src=`/img/team/teammates/${content.photo.name}.png` alt=content.photo.desc)
+      .teammate-info.teammate__info
+        h3.teammate-info-title.teammate-info__title
+          span.teammate-info-title__text= content.name
+        p.teammate-info-position.teammate-info__position
+          span.teammate-info-position__text= content.position
+        +uiSocials('teammate-info', content.socials)
+        p.teammate-info-desc.teammate-info__desc
+          span.teammate-info-desc__text= content.desc

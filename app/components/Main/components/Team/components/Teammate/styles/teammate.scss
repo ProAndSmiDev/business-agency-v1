@@ -1,0 +1,163 @@
+.teammate {
+  $self: &;
+  display: flex;
+
+  &__wrapper {
+    display: flex;
+
+    @media(max-width: $smartphone) {
+      flex-direction: column;
+    }
+
+    &--is-inverted {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__info {
+    width: 100%;
+    max-width: em(285, $fz);
+
+    @media(max-width: $ws) {
+      max-width: em(242, $fz);
+    }
+    @media(max-width: $smartphone) {
+      max-width: 100%;
+    }
+  }
+
+  &__photo {
+    position: relative;
+    width: em(285, $fz);
+    height: em(285, $fz);
+
+    @media(max-width: $ws) {
+      width: em(242, $fz);
+      height: em(242, $fz);
+    }
+    @media(max-width: $smartphone) {
+      width: 100%;
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+
+      content: "";
+
+      border: em(15, $fz) solid transparent;
+      border-right: em(25, $fz) solid $primary;
+      border-left: em(25, $fz) solid transparent;
+
+      @media(max-width: $ws) {
+        border-width: em(10, $fz);
+        border-right-width: em(15, $fz);
+        border-left-width: em(15, $fz);
+      }
+      @media(max-width: $smartphone) {
+        display: none;
+      }
+    }
+
+    &--is-inverted {
+      &::after {
+        right: auto;
+        left: 0;
+
+        border-right-color: transparent;
+        border-left-color: $primary;
+      }
+    }
+  }
+}
+
+.teammate-photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: em(10, $fz);
+  background-color: darken($primary, 4%);
+
+  &__img {
+    width: auto;
+    height: 100%;
+    max-height: em(275, $fz);
+
+    @media(max-width: $ws) {
+      max-height: em(232, $fz);
+    }
+  }
+}
+
+.teammate-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: em(20 15, $fz);
+
+  &__socials {
+    margin-top: em(15, $fz);
+
+    .socials-link {
+      &__icon {
+        color: darken($primary, 20%);
+
+        @media(max-width: $ws) and (min-width: $smartphone + 1) {
+          width: em(20, $fz);
+          height: em(20, $fz);
+        }
+      }
+    }
+  }
+
+  &__desc {
+    margin-top: em(7, $fz);
+  }
+}
+
+.teammate-info-title {
+  &__text {
+    $fz: 22;
+    color: $secondary;
+    font-size: em($fz, $fz_base);
+    font-weight: 500;
+
+    @media(max-width: $ws) and (min-width: $smartphone + 1) {
+      $fz: 18;
+      font-size: em($fz, $fz_base);
+    }
+  }
+}
+
+.teammate-info-position {
+  &__text {
+    color: $theme;
+    font-weight: 700;
+
+    @media(max-width: $ws) and (min-width: $smartphone + 1) {
+      $fz: 14;
+      font-size: em($fz, $fz_base);
+    }
+  }
+}
+
+.teammate-info-desc {
+  text-align: center;
+
+  &__text {
+    $fz: 14;
+    color: $secondary;
+    font-size: em($fz, $fz_base);
+    font-weight: 300;
+
+    @media(max-width: $ws) {
+      $fz: 12;
+      font-size: em($fz, $fz_base);
+    }
+    @media(max-width: $smartphone) {
+      font-weight: 400;
+      line-height: 2;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+include components/Teammate/Teammate
+
+mixin getTeam(parent='main')
+  section.team(class=`${(parent) ? `${parent}__team` : ''}`)
+    .u-wrapper.team__wrapper
+      h2.team-title.team__title
+        span.team-title__text= team.title
+      ul.team-list.team__list
+        for item in team.teammates
+          li.team-list__item
+            +getTeammate('team-list', item)

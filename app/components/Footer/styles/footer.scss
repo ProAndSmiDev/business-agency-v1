@@ -1,14 +1,16 @@
 .footer {
   &__upper {
+    min-height: em(318, $fz);
+
     display: flex;
     align-items: center;
-    min-height: em(318, $fz);
     background-color: darken($secondary, 13%);
 
     @media (max-width: $pc) {
+      min-height: em(255, $fz);
+
       padding-top: em(20, $fz);
       padding-bottom: em(20, $fz);
-      min-height: em(255, $fz);
     }
   }
 
@@ -55,9 +57,10 @@
   }
 
   &__lower {
+    min-height: em(49, $fz);
+
     display: flex;
     align-items: center;
-    min-height: em(49, $fz);
     background-color: darken($secondary, 16%);
   }
 
