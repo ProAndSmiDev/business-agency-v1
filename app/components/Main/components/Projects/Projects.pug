@@ -1,0 +1,25 @@
+mixin getProjects(parent='main')
+  section.projects(class=`${(parent) ? `${parent}__projects` : ''}`)
+    picture.projects-bg.projects__bg
+      source(srcset=`/img/projects/${projects.img.name}.webp` type='image/webp')
+
+      img.projects-bg__img(src=`/img/projects/${projects.img.name}.jpg` alt=projects.img.alt)
+    .u-wrapper.projects__wrapper(data-aos='fade-left' data-aos-duration='1200')
+      h2.projects-title.projects__title
+        span.projects-title__text= projects.title
+      p.projects-annotation.projects__annotation
+        span.projects-annotation__text= projects.annotation
+      .swiper.projects-swiper.projects__swiper
+        .swiper-wrapper.projects-swiper__wrapper
+          for project in projects.info
+            .swiper-slide.projects-swiper__slide
+              article.projects-info.projects-swiper__info
+                a.projects-info__link(href=project.link.url target='_blank' title=project.link.title)
+                  picture.projects-info-photo.projects-info__photo
+                    source(srcset=`/img/projects/${project.img.name}.webp` type='image/webp')
+
+                    img.projects-info-photo__img(src=`/img/projects/${project.img.name}.jpg` alt=project.img.alt)
+                  h3.projects-info-title.projects-info__title
+                    span.projects-info-title__text= project.title
+        button.swiper-button-prev.projects-swiper__navigation.projects-swiper__navigation--is-prev(type="button" title="Go to the previous slide")
+        button.swiper-button-next.projects-swiper__navigation.projects-swiper__navigation--is-next(type="button" title="Go to the next slide")

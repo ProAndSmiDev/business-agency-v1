@@ -27,7 +27,7 @@
     },
     "link": {
       "rel": {
-        "stylesheet": "styles.min.css",
+        "stylesheet": "styles.css",
         "canonical": "http://domain.com",
         "alternate": {
           "hreflang": {

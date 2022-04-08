@@ -1,0 +1,45 @@
+{
+  "projects": {
+    "img": {
+      "name": "bg",
+      "alt": "Background for section «Projects»"
+    },
+    "title": "Projects",
+    "annotation": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet aspernatur dolorum est eveniet, id molestiae odio quas voluptate. Ab adipisci asperiores dolores earum eos hic illum itaque libero maxime minus molestias nemo nihil numquam quibusdam repudiandae rerum totam vitae, voluptatibus! Accusamus beatae doloremque eos fugiat nulla quam quisquam veritatis.",
+    "info": [
+      {
+        "title": "CRM Meetings",
+        "img": {
+          "name": "crm-meetings",
+          "alt": "CRM Meetings now is online!"
+        },
+        "link": {
+          "url": "#crm-meetings",
+          "title": "Follow to «CRM Meetings»"
+        }
+      },
+      {
+        "title": "Business Solutions",
+        "img": {
+          "name": "business-solutions",
+          "alt": "Comfortable and unique solutions for your business"
+        },
+        "link": {
+          "url": "#business-solutions",
+          "title": "Follow to «Business Solutions»"
+        }
+      },
+      {
+        "title": "TOP Technologies",
+        "img": {
+          "name": "top-technologies",
+          "alt": "Alltime upgrading our knowledges"
+        },
+        "link": {
+          "url": "#top-technologies",
+          "title": "Follow to «TOP Technologies»"
+        }
+      }
+    ]
+  }
+}

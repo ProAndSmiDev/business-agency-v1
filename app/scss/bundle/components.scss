@@ -1,19 +1,30 @@
-@import 'uiKit/uiLogo/styles/component';
-@import 'uiKit/uiSocials/styles/component';
+//- uiKit
+@import
+  "uiKit/uiLogo/styles/component",
+  "uiKit/uiSocials/styles/component";
 
-@import 'app/layout/Template/styles/component';
+//- Layout
+@import
+  "app/layout/Template/styles/component";
 
-@import 'app/components/Header/styles/component';
-@import 'app/components/Header/components/Menu/styles/component';
+//- Header
+@import
+  "@header/styles/component",
+  "@header/components/Menu/styles/component";
 
-@import 'app/components/Main/styles/component';
-@import 'app/components/Main/components/Banner/styles/component';
-@import 'app/components/Main/components/About/styles/component';
-@import 'app/components/Main/components/Team/styles/component';
-@import 'app/components/Main/components/Team/components/Teammate/styles/component';
+//- Main
+@import
+  "@main/styles/component",
+  "@main/components/FirstScreen/styles/component",
+  "@main/components/About/styles/component",
+  "@main/components/Team/styles/component",
+  "@main/components/Team/components/Teammate/styles/component",
+  "@main/components/Projects/styles/component";
 
-@import 'app/components/Footer/styles/component';
-@import 'app/components/Footer/components/AddMenu/styles/component';
-@import 'app/components/Footer/components/Subscribe/styles/component';
-@import 'app/components/Footer/components/Contacts/styles/component';
-@import 'app/components/Footer/components/Copyright/styles/component';
+//- Footer
+@import
+  "@footer/styles/component",
+  "@footer/components/AddMenu/styles/component",
+  "@footer/components/Subscribe/styles/component",
+  "@footer/components/Contacts/styles/component",
+  "@footer/components/Copyright/styles/component";

@@ -1,7 +1,7 @@
 include components/Teammate/Teammate
 
 mixin getTeam(parent='main')
-  section.team(class=`${(parent) ? `${parent}__team` : ''}`)
+  section.team(class=`${(parent) ? `${parent}__team` : ''}` data-aos='fade-right' data-aos-duration='1200')
     .u-wrapper.team__wrapper
       h2.team-title.team__title
         span.team-title__text= team.title
