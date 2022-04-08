@@ -44,6 +44,7 @@ module.exports = {
     'property-no-vendor-prefix': [
       true,
       {
+        //- Ignore prefixing for properties by stylelint
         ignoreProperties: [
           'box-orient',
           'background-clip',

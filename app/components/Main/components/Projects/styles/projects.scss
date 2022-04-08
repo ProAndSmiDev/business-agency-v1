@@ -1,0 +1,184 @@
+//- TODO: Check all properties' values by psd template
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: em(60, $fz);
+  padding-bottom: em(60, $fz);
+  background-color: darken($secondary, 5%);
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    align-items: baseline;
+  }
+
+  &__title {
+    @extend %main__title;
+
+    @media(max-width: $smartphone) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__annotation {
+    margin-top: em(40, $fz);
+  }
+
+  &__swiper {
+    width: 100%;
+    margin-top: em(25, $fz);
+  }
+}
+
+.projects-bg {
+  opacity: 0.1;
+
+  overflow: hidden;
+
+  &__img {
+    object-position: em(0 -175, $fz);
+
+    @media(max-width: $desk) {
+      width: auto;
+    }
+  }
+}
+
+.projects-title {
+  @extend %main-title;
+
+  &__text {
+    @extend %main-title__text;
+    @extend %main-title__text--is-inversed;
+  }
+}
+
+.projects-annotation {
+  &__text {
+    color: $primary;
+
+    @media(max-width: $smartphone) {
+      $fz: 12;
+      font-size: em($fz, $fz_base);
+    }
+  }
+}
+
+.projects-swiper {
+  &__info {
+    position: relative;
+  }
+
+  &__navigation {
+    --swiper-navigation-size: #{em(29, $fz)};
+    top: 50%;
+    width: em(55, $fz);
+    height: em(55, $fz);
+    background-color: $primary;
+    transform: translateY(-50%);
+    transition: opacity 0.6s ease-in-out;
+
+    @media(max-width: $smartphone) {
+      --swiper-navigation-size: #{em(20, $fz)};
+      width: em(40, $fz);
+      height: em(40, $fz);
+    }
+
+    &:hover {
+      opacity: 0.35;
+    }
+
+    &::after {
+      color: darken($theme, 30%);
+      font-weight: 900;
+    }
+
+    &--is-prev {
+      left: 0;
+    }
+
+    &--is-next {
+      right: 0;
+    }
+  }
+}
+
+.projects-info {
+  $self: &;
+  padding-bottom: em(30, $fz);
+
+  &__link {
+    display: flex;
+    overflow: hidden;
+
+    #{$self}__photo {
+      transition: transform 1s ease-in-out;
+    }
+
+    &:hover {
+      opacity: 1;
+
+      #{$self}__photo {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    max-width: em(430, $fz);
+    transform: translateX(-50%);
+
+    @media(max-width: $smartphone) {
+      bottom: em(15, $fz);
+      max-width: em(280, $fz);
+    }
+  }
+}
+
+.projects-info-photo {
+  &__img {
+    height: em(420, $fz);
+
+    @media(max-width: $smartphone) {
+      height: em(300, $fz);
+    }
+  }
+}
+
+.projects-info-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: em(13 15, $fz);
+  background-color: $primary;
+
+  @media(max-width: $smartphone) {
+    padding: em(5 10, $fz);
+  }
+
+  &__text {
+    $fz: 30;
+    color: $secondary;
+    font-size: em($fz, $fz_base);
+    font-weight: 600;
+
+    @media(max-width: $smartphone) {
+      $fz: 24;
+      font-size: em($fz, $fz_base);
+    }
+  }
+}

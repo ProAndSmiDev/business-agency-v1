@@ -1,0 +1,15 @@
+mixin getFirstScreen(parent='main')
+  section.first-screen(class=`${(parent) ? `${parent}__banner` : ''}` data-aos='zoom-in' data-aos-duration='1200' data-aos-delay='600')
+    picture.first-screen-bg.first-screen__bg
+      source(srcset=`/img/first-screen/${firstScreen.bg.name}.webp` type='image/webp')
+      img.first-screen-bg__img(src=`/img/first-screen/${firstScreen.bg.name}.jpg` alt=firstScreen.bg.alt)
+    .first-screen__wrapper
+      h1.first-screen-title.first-screen__title
+        span.first-screen-title__text= firstScreen.title
+      p.first-screen-info.first-screen__info
+        span.first-screen-info__text= firstScreen.info
+      a.first-screen-btn.first-screen__btn.pulse(href=firstScreen.btn.link title=firstScreen.btn.text)
+        span.first-screen-btn__text= firstScreen.btn.text
+    a.first-screen-down.first-screen__down(href=firstScreen.btn.arrowLink aria-label=firstScreen.btn.arrowTitle title=firstScreen.btn.arrowTitle)
+      svg.first-screen-down__icon
+        use(href='/img/sprite.svg#arrow-down')

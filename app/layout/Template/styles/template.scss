@@ -1,4 +1,8 @@
 .page {
+  @media(max-width: $phone) {
+    font-size: vw(16, 479);
+  }
+
   &__header {
     min-height: em(90, $fz);
 
@@ -6,6 +10,6 @@
       min-height: em(60, $fz);
     }
   }
-  &__main {}
+
   &__footer {}
 }

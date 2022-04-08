@@ -6,6 +6,7 @@
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -130,54 +131,5 @@ body {
 
   &--is-row {
     flex-direction: row;
-  }
-}
-
-%main__title {
-  position: relative;
-
-  &::after {
-    position: absolute;
-    bottom: em(-20, $fz);
-    left: 0;
-    width: 100%;
-    height: em(10, $fz);
-
-    content: "";
-
-    display: block;
-    background-color: $theme;
-
-    @media (max-width: $pc) {
-      bottom: em(-10, $fz);
-      height: em(6, $fz);
-    }
-    @media (max-width: $phone) {
-      bottom: em(-5, $fz);
-      height: em(4, $fz);
-    }
-  }
-}
-
-%main-title {
-  display: inline-flex;
-
-  &__text {
-    $fz: 60;
-    color: $secondary;
-
-    font-size: em($fz, $fz_base);
-    font-weight: 700;
-
-    @media (max-width: $pc) {
-      $fz: 48;
-
-      font-size: em($fz, $fz_base);
-    }
-    @media (max-width: $phone) {
-      $fz: 36;
-
-      font-size: em($fz, $fz_base);
-    }
   }
 }

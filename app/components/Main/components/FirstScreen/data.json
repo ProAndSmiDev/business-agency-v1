@@ -1,7 +1,7 @@
 {
-  "banner": {
+  "firstScreen": {
     "bg": {
-      "name": "banner-bg",
+      "name": "first-screen-bg",
       "alt": "Banner's bg photo"
     },
     "title": "One page",

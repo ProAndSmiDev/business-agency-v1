@@ -24,5 +24,6 @@
         "no-alert": "off",
         "prefer-destructuring": "off"
     },
-    "noInlineConfig": true
+    "noInlineConfig": true,
+    "ignorePatterns": ["gulpfile.js"]
 }
