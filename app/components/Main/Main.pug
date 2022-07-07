@@ -2,6 +2,7 @@ include components/FirstScreen/FirstScreen
 include components/About/About
 include components/Team/Team
 include components/Projects/Projects
+include components/Contacts/Contacts
 
 mixin getMain(parent='page')
   main.main(class=`${(parent) ? parent + '__main' : ''}`)
@@ -9,3 +10,4 @@ mixin getMain(parent='page')
     +getAbout
     +getTeam
     +getProjects
+    +getContacts
