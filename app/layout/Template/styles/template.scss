@@ -1,4 +1,8 @@
 .page {
+  max-width: em(1920, $fz);
+  background-color: $primary;
+  box-shadow: em(1 1 40 1, $fz) transparentize(darken($primary, 100%), 0.3);
+
   @media(max-width: $phone) {
     font-size: vw(16, 479);
   }
